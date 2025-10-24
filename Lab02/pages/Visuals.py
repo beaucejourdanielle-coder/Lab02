@@ -42,8 +42,8 @@ except Exception as e:
 st.write(csv_data)
 
 try:
-    if os.path.exists("data.json"):
-        with open("data.json", "r") as infile:
+    if os.path.exists("Lab02/data.json"):
+        with open("Lab02/data.json", "r") as infile:
             json_data = json.load(infile)
         json_data = json_data[0]
         hairData = pd.DataFrame({
